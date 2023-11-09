@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" type="text/css" href="./css/navbar.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/navbar.css">
 </head>
 <body>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="news.html">News</a></li>
-  <li><a href="contact.html">Contact</a></li>
-  <li><a href="about.html">About</a></li>
-</ul>
-<h1>Contact</h1>
-<p>
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur rerum optio natus quibusdam blanditiis beatae sequi molestias ut necessitatibus maiores consequuntur, a minima eaque repellendus iusto repellat nihil voluptate eum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-  Quia, consequatur est sequi eos repellendus, maiores nulla animi eaque dolorum totam quasi quaerat blanditiis fugiat recusandae odio veritatis, ratione libero hic.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. At ullam maiores eveniet. Ullam, velit quibusdam inventore, iure culpa maxime consequatur omnis perferendis cum consectetur quia, voluptatibus ducimus ad animi eius.
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi quas magnam adipisci? Reiciendis, tenetur sequi tempore, sint repellendus corrupti omnis mollitia quia odit tempora molestiae animi doloribus molestias dolores iste!
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="about.html">About</a></li>
+  </ul>
+<h3>Contact Form</h3>
 
-</p>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 </body>
 </html>
